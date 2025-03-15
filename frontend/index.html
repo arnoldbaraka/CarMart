@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car App</h1>
+
+        <div id="auth">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="loginBtn">Login</button>
+            <button id="registerBtn">Register</button>
+        </div>
+
+        <div id="carForm" style="display: none;">
+            <h2>Add a New Car</h2>
+            <input type="text" id="make" placeholder="Make" required>
+            <input type="text" id="model" placeholder="Model" required>
+            <input type="number" id="year" placeholder="Year" required>
+            <input type="number" id="price" placeholder="Price" required>
+            <textarea id="description" placeholder="Description"></textarea>
+            <button id="addCarBtn">Add Car</button>
+        </div>
+
+        <div id="carList">
+            <h2>Available Cars</h2>
+            <ul id="cars"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
